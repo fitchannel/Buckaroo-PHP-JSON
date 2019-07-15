@@ -38,8 +38,10 @@ class Service
             $this->oData->Parameters = [];
         }
 
-        if ($this->hasParameter($sName)) {
-            $this->removeParameter($sName);
+        if (!is_null($iGroupId)) {
+            if ($this->hasParameter($sName)) {
+                $this->removeParameter($sName);
+            }
         }
 
         $oServiceParameter = new ServiceParameter();
