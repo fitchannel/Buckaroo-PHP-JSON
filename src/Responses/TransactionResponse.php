@@ -340,7 +340,7 @@ class TransactionResponse
      */
     public function getAdditionalParameters()
     {
-        return $this->getParametersFromType('AdditionalParameters', 'AdditionalParameter');
+        return $this->getParametersFromType('AdditionalParameters', 'List');
     }
 
     /**
